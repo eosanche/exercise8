@@ -72,26 +72,27 @@ margin-top: 0;
 margin-bottom: 0;
 }
   
-@media (min-width: 600px) {
+@media screen and (max-width: 600px) {
   body, #subhead, img {
     background-color: yellow;
       width: 100%;
     font-size: 2em;
   }
 }  
-  
-    @media (min-width: 800px) {
-   body, img {
+    @media screen and (min-width: 800px) {
+   #subhead {
+        background-color: aqua;
+      width: 600px;
+  }
+}  
+
+    @media screen and (min-width: 800px) {
+  img, #subhead {
     background-color: aqua;
       width: 800px;
   }
 }  
   
-  @media (min-width: 800px) {
-  body, p {
-      width: 600px;
-  }
-}  
 
   
 </style>
